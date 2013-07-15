@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>LibJPEG</ProjectName>
+    <ProjectGuid>{5E1D4E5F-E10C-4BA3-B663-F33014FD21D9}</ProjectGuid>
+    <RootNamespace>LibJPEG</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\zlib-1.2.7</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jaricom.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcapimin.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcapistd.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcarith.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jccoefct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jccolor.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcdctmgr.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jchuff.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcinit.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcmainct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcmarker.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcmaster.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcomapi.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcparam.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcprepct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jcsample.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jctrans.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdapimin.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdapistd.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdarith.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdatadst.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdatasrc.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdcoefct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdcolor.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jddctmgr.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdhuff.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdinput.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdmainct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdmarker.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdmaster.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdmerge.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdpostct.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdsample.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdtrans.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jerror.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jfdctflt.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jfdctfst.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jfdctint.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jidctflt.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jidctfst.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jidctint.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jmemmgr.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jmemnobs.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jquant1.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jquant2.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jutils.c" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\transupp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jconfig.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jdct.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jerror.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jinclude.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jmemsys.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jmorecfg.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jpegint.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jpeglib.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\jversion.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\transupp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\coderules.txt" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibJPEG\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{56C51959-8F41-4BAD-B46E-AD42FC084033}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/dev/KITO2/source-deps/ogre_src_v1-9-0RC1/OgreMain/include;C:/dev/KITO2/deps/ogre-1.9rc/include;C:/dev/KITO2/source-deps/zlib-1.2.7;C:/dev/KITO2/source-deps/zziplib-0.13.59;C:/dev/KITO2/source-deps/FreeImage-3.15.4/Source;C:/dev/KITO2/source-deps/freetype-2.4.11/include/freetype;C:/dev/KITO2/source-deps/freetype-2.4.11/include;C:/dev/KITO2/source-deps/ois-1.3/includes;C:/dev/KITO2/source-deps/ois-1.3;C:/Program Files (x86)/NVIDIA Corporation/Cg/include;C:/Program Files (x86)/NVIDIA Corporation/Cg;C:/dev/KITO2/source-deps/glsl-optimizer-master/src;C:/dev/KITO2/source-deps/glsl-optimizer-master;C:/dev/KITO2/source-deps/hlsl2glslfork-master/include;C:/dev/KITO2/source-deps/hlsl2glslfork-master;C:/Program Files (x86)/boost/boost_1_47;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/dev/KITO2/source-deps/ogre_src_v1-9-0RC1/OgreMain/include;C:/dev/KITO2/deps/ogre-1.9rc/include;C:/dev/KITO2/source-deps/zlib-1.2.7;C:/dev/KITO2/source-deps/zziplib-0.13.59;C:/dev/KITO2/source-deps/FreeImage-3.15.4/Source;C:/dev/KITO2/source-deps/freetype-2.4.11/include/freetype;C:/dev/KITO2/source-deps/freetype-2.4.11/include;C:/dev/KITO2/source-deps/ois-1.3/includes;C:/dev/KITO2/source-deps/ois-1.3;C:/Program Files (x86)/NVIDIA Corporation/Cg/include;C:/Program Files (x86)/NVIDIA Corporation/Cg;C:/dev/KITO2/source-deps/glsl-optimizer-master/src;C:/dev/KITO2/source-deps/glsl-optimizer-master;C:/dev/KITO2/source-deps/hlsl2glslfork-master/include;C:/dev/KITO2/source-deps/hlsl2glslfork-master;C:/Program Files (x86)/boost/boost_1_47;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/dev/KITO2/source-deps/ogre_src_v1-9-0RC1/OgreMain/include;C:/dev/KITO2/deps/ogre-1.9rc/include;C:/dev/KITO2/source-deps/zlib-1.2.7;C:/dev/KITO2/source-deps/zziplib-0.13.59;C:/dev/KITO2/source-deps/FreeImage-3.15.4/Source;C:/dev/KITO2/source-deps/freetype-2.4.11/include/freetype;C:/dev/KITO2/source-deps/freetype-2.4.11/include;C:/dev/KITO2/source-deps/ois-1.3/includes;C:/dev/KITO2/source-deps/ois-1.3;C:/Program Files (x86)/NVIDIA Corporation/Cg/include;C:/Program Files (x86)/NVIDIA Corporation/Cg;C:/dev/KITO2/source-deps/glsl-optimizer-master/src;C:/dev/KITO2/source-deps/glsl-optimizer-master;C:/dev/KITO2/source-deps/hlsl2glslfork-master/include;C:/dev/KITO2/source-deps/hlsl2glslfork-master;C:/Program Files (x86)/boost/boost_1_47;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/dev/KITO2/source-deps/ogre_src_v1-9-0RC1/OgreMain/include;C:/dev/KITO2/deps/ogre-1.9rc/include;C:/dev/KITO2/source-deps/zlib-1.2.7;C:/dev/KITO2/source-deps/zziplib-0.13.59;C:/dev/KITO2/source-deps/FreeImage-3.15.4/Source;C:/dev/KITO2/source-deps/freetype-2.4.11/include/freetype;C:/dev/KITO2/source-deps/freetype-2.4.11/include;C:/dev/KITO2/source-deps/ois-1.3/includes;C:/dev/KITO2/source-deps/ois-1.3;C:/Program Files (x86)/NVIDIA Corporation/Cg/include;C:/Program Files (x86)/NVIDIA Corporation/Cg;C:/dev/KITO2/source-deps/glsl-optimizer-master/src;C:/dev/KITO2/source-deps/glsl-optimizer-master;C:/dev/KITO2/source-deps/hlsl2glslfork-master/include;C:/dev/KITO2/source-deps/hlsl2glslfork-master;C:/Program Files (x86)/boost/boost_1_47;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\56140bd40fccdda6b7afa1e3159ebd88\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/dev/KITO2/deps/ogre-1.9rc/CMakeFiles/56140bd40fccdda6b7afa1e3159ebd88/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\KITO2\deps\ogre-1.9rc\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/dev/KITO2/deps/ogre-1.9rc/CMakeFiles/56140bd40fccdda6b7afa1e3159ebd88/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\KITO2\deps\ogre-1.9rc\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/dev/KITO2/deps/ogre-1.9rc/CMakeFiles/56140bd40fccdda6b7afa1e3159ebd88/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\KITO2\deps\ogre-1.9rc\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/dev/KITO2/deps/ogre-1.9rc/CMakeFiles/56140bd40fccdda6b7afa1e3159ebd88/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\KITO2\deps\ogre-1.9rc\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/OgreMain/OgreMain.vcxproj">
+      <Project>633A03CE-FE45-4698-9C1E-E9A832C4869C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Tools/MeshUpgrader/OgreMeshUpgrader.vcxproj">
+      <Project>FEE44FAC-AD6C-4821-9C37-BCE9FF770CAB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/Overlay/OgreOverlay.vcxproj">
+      <Project>EE37C285-62A9-4379-937D-0377AD693698</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/Paging/OgrePaging.vcxproj">
+      <Project>50EA74BC-6AD3-4DF2-94BF-E20BBEC63D63</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/Property/OgreProperty.vcxproj">
+      <Project>E1550CDA-4CD6-4FE1-AB24-9229052E9B21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/RTShaderSystem/OgreRTShaderSystem.vcxproj">
+      <Project>4A0110B2-6995-4F17-8CCE-FB272626BAAA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/Terrain/OgreTerrain.vcxproj">
+      <Project>A6B68B07-B9F2-4AD7-8C85-44656B3B348C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Components/Volume/OgreVolume.vcxproj">
+      <Project>85D052D9-70DD-40E4-823A-B618F5AEACA9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Tools/XMLConverter/OgreXMLConverter.vcxproj">
+      <Project>2A73EAAF-BB06-4EC0-A018-5C9F8FCA3061</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Tools/XSIExport/OgreXSIExporter.vcxproj">
+      <Project>2781F438-CB32-48E7-9353-23BC32AF99CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/BSPSceneManager/Plugin_BSPSceneManager.vcxproj">
+      <Project>369BD2A3-F043-4B29-9CEA-46A30C0D5D19</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/CgProgramManager/Plugin_CgProgramManager.vcxproj">
+      <Project>EC89E74C-6F67-405B-8D58-42B6193E68D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/OctreeSceneManager/Plugin_OctreeSceneManager.vcxproj">
+      <Project>E89F69A2-4AEE-457A-8BEE-2A1A2FA2C351</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/OctreeZone/Plugin_OctreeZone.vcxproj">
+      <Project>0C94ABA0-7647-4F70-9B22-5481C5553E20</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/PCZSceneManager/Plugin_PCZSceneManager.vcxproj">
+      <Project>8E9D54E8-D7BF-44E1-B608-13C821263BDC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/PlugIns/ParticleFX/Plugin_ParticleFX.vcxproj">
+      <Project>E43AA6C3-33AF-468C-AC79-84C9F75D6E56</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/RenderSystems/Direct3D11/RenderSystem_Direct3D11.vcxproj">
+      <Project>1C8E08F1-B6AB-4E0B-9317-52F8071FC103</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/RenderSystems/Direct3D9/RenderSystem_Direct3D9.vcxproj">
+      <Project>8AF0E323-6E56-414A-8503-728BC0572D43</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/RenderSystems/GL/RenderSystem_GL.vcxproj">
+      <Project>715294D8-36A0-4072-B227-2C7BC0C578D5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Browser/SampleBrowser.vcxproj">
+      <Project>3418F87D-F9A4-4CAF-BBE2-79728A3D81A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/BSP/Sample_BSP.vcxproj">
+      <Project>9D4F8D06-CBBB-4653-8B15-A93275A89389</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/BezierPatch/Sample_BezierPatch.vcxproj">
+      <Project>54658D27-BA9F-47C5-96F2-CA4107EFB116</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/CameraTrack/Sample_CameraTrack.vcxproj">
+      <Project>8C1355B9-FDD8-4081-B165-8C4970F073D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/CelShading/Sample_CelShading.vcxproj">
+      <Project>BC0F4C0E-C324-4BE6-B88C-5ADF9C1C7919</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Character/Sample_Character.vcxproj">
+      <Project>65C11AB4-668C-43A4-8C2F-BAD7EDDEDA5C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Compositor/Sample_Compositor.vcxproj">
+      <Project>402ACC09-25D3-4648-A74F-B3006F65F38F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/CubeMapping/Sample_CubeMapping.vcxproj">
+      <Project>610D00C1-EF80-4180-818E-D3CC661C57E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/DeferredShading/Sample_DeferredShading.vcxproj">
+      <Project>F1545921-A5C8-41C6-9C2B-F3642C3B61A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Dot3Bump/Sample_Dot3Bump.vcxproj">
+      <Project>60BBDC1A-D08F-4AEB-BE59-CBD51BCB956F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/DualQuaternion/Sample_DualQuaternion.vcxproj">
+      <Project>1B6141E3-FFE0-4025-BD61-A1EEB1D69D71</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/DynTex/Sample_DynTex.vcxproj">
+      <Project>48E9D265-744D-4D0C-B5DD-05A7D90E6B21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/EndlessWorld/Sample_EndlessWorld.vcxproj">
+      <Project>14BF7232-952E-4DE6-A460-5B0651AA2630</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/FacialAnimation/Sample_FacialAnimation.vcxproj">
+      <Project>E3DEC863-64DD-4733-97EB-543ACE2F27E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Fresnel/Sample_Fresnel.vcxproj">
+      <Project>294A6390-8DAF-46D8-B730-B27C7F6A30DC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Grass/Sample_Grass.vcxproj">
+      <Project>5813768D-1B88-4E9E-B501-C91B3AC6293A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Instancing/Sample_Instancing.vcxproj">
+      <Project>2AFBBC94-A566-410D-B53D-F4AC5356CE84</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Isosurf/Sample_Isosurf.vcxproj">
+      <Project>D89E0160-32A3-4EE5-A9F4-1C86011FED2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Lighting/Sample_Lighting.vcxproj">
+      <Project>5034218E-5DF7-4E8E-9A51-04A847C6FBCC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/MeshLod/Sample_MeshLod.vcxproj">
+      <Project>4D59D4A8-9EC3-4C41-81AD-7D044D67429A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/NewInstancing/Sample_NewInstancing.vcxproj">
+      <Project>76E1DA6F-2546-496D-BEFA-A5DCB67746CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/OceanDemo/Sample_Ocean.vcxproj">
+      <Project>324F9262-43A0-4766-9B8F-B3DA8073288A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/ParticleFX/Sample_ParticleFX.vcxproj">
+      <Project>E088EA8A-1FAF-44C9-81E2-519D198DB7DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/ParticleGS/Sample_ParticleGS.vcxproj">
+      <Project>4D29E5BB-ECF2-4833-B704-89C3538094FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SSAO/Sample_SSAO.vcxproj">
+      <Project>0D9FC99E-E67A-45B9-A943-9513BB692AC0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/ShaderSystem/Sample_ShaderSystem.vcxproj">
+      <Project>26290111-042E-4685-B056-459C07EA6F79</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/ShaderSystemMultiLight/Sample_ShaderSystemMultiLight.vcxproj">
+      <Project>AB5B5E03-5188-43B7-83CD-8446E6B3840C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/ShaderSystemTexturedFog/Sample_ShaderSystemTexturedFog.vcxproj">
+      <Project>86F7FF44-B72E-4B8E-9D77-B49482415970</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Shadows/Sample_Shadows.vcxproj">
+      <Project>5DCB3F4D-8418-43E4-B0B0-4A2932DE53EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SkeletalAnimation/Sample_SkeletalAnimation.vcxproj">
+      <Project>9465D996-61CE-4003-A36B-69104DF7BE65</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SkyBox/Sample_SkyBox.vcxproj">
+      <Project>D4965F21-2CA0-47C6-9947-ACD4EF14B80A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SkyDome/Sample_SkyDome.vcxproj">
+      <Project>0463EC1E-16A7-44C5-B56C-BB4B750C63FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SkyPlane/Sample_SkyPlane.vcxproj">
+      <Project>70917425-9512-43B7-A032-646C331B9734</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Smoke/Sample_Smoke.vcxproj">
+      <Project>165A1331-5221-46D4-976A-6EBCF320A498</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/SphereMapping/Sample_SphereMapping.vcxproj">
+      <Project>E4E6C3FC-3B48-4EB9-B587-983631C202EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Terrain/Sample_Terrain.vcxproj">
+      <Project>59BC0FAC-B411-402E-B6BF-FFA2EF119612</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Tesselation/Sample_Tesselation.vcxproj">
+      <Project>8C87A1A4-741E-4177-B8F2-CD0920FD5B88</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/TextureArray/Sample_TextureArray.vcxproj">
+      <Project>088C08E9-66F0-434B-B8EC-565E3DCE0FA2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/TextureFX/Sample_TextureFX.vcxproj">
+      <Project>38B44F12-0311-45A1-81D7-4F3E88722F90</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Transparency/Sample_Transparency.vcxproj">
+      <Project>BAAE7B68-3D8A-4055-BDB3-32CBBA59A674</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/VolumeCSG/Sample_VolumeCSG.vcxproj">
+      <Project>6CE344D5-48A5-4F7B-9331-F4A1DD2BDCAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/VolumeTerrain/Sample_VolumeTerrain.vcxproj">
+      <Project>09813EAB-5D33-4F74-AD4A-89C43CF300B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/VolumeTex/Sample_VolumeTex.vcxproj">
+      <Project>3F85FE07-1397-4210-888E-9C6C0CCFDB71</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/KITO2/deps/ogre-1.9rc/Samples/Water/Sample_Water.vcxproj">
+      <Project>1D56F935-617F-4C29-B4F5-B2AB84AFBF76</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

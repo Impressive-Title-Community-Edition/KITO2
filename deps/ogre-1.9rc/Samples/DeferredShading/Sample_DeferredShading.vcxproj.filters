@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\AmbientLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\DeferredLightCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\DeferredShading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\DeferredShadingDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\DLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\GBufferMaterialGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\GBufferSchemeHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\GeomUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\LightMaterialGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\MaterialGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\src\SSAOLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\AmbientLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\DeferredLightCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\DeferredShading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\DeferredShadingDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\DLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\GBufferMaterialGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\GBufferSchemeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\GeomUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\LightMaterialGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\ListenerFactoryLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\MaterialGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\NullSchemeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\SharedData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\DeferredShading\include\SSAOLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0E1AEF8A-6078-4B2D-8E3E-D4239D305A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2EA4E6B2-0C73-4C84-BE34-6EF61BEC2077}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

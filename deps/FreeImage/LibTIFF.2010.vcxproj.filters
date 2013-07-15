@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5fc0d095-cdc0-4c6d-8d0e-b8db3f5fc29a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9a9537ec-82be-4102-909c-0baa26fa68d1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_aux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_close.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_codec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dumpmode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_extension.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3sm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_flush.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_getimage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_jpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_luv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_lzw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_next.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_ojpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_packbits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_pixarlog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_predict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_read.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_strip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_swab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_thunder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_tile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_warning.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\t4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_predict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffiop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffvers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\uvcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

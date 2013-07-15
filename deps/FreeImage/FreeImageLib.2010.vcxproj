@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>FreeImageLib</ProjectName>
+    <ProjectGuid>{9E219DF2-315D-478E-8A07-8960C377CE1E}</ProjectGuid>
+    <RootNamespace>FreeImageLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\ZLib;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;OPJ_STATIC;FREEIMAGE_LIB;_CRT_SECURE_NO_DEPRECATE;LIBRAW_NODLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\ZLib;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OPJ_STATIC;FREEIMAGE_LIB;_CRT_SECURE_NO_DEPRECATE;LIBRAW_NODLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\BitmapAccess.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ColorLookup.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\FreeImage.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\FreeImageIO.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\GetType.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MemoryIO.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PixelAccess.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\NNQuantizer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\WuQuantizer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion16_555.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion16_565.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion24.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion32.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion4.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion8.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionFloat.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionRGB16.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionRGBF.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionType.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionUINT16.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Halftoning.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoColorConvert.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoDrago03.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoFattal02.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoReinhard05.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ToneMapping.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\J2KHelper.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MNGHelper.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Plugin.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginBMP.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginCUT.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginDDS.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginEXR.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginG3.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginGIF.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginHDR.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginICO.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginIFF.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJ2K.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJNG.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJP2.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJPEG.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginKOALA.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginMNG.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPCD.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPCX.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPFM.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPICT.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPNG.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPNM.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPSD.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginRAS.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginRAW.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginSGI.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginTARGA.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginTIFF.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginWBMP.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginXBM.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginXPM.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PSDParser.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\TIFFLogLuv.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\Deprecated.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\DeprecationMgr.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\CacheFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MultiPage.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ZLibInterface.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\Exif.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FIRational.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FreeImageTag.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\IPTC.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\TagConversion.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\TagLib.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\XTIFF.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Background.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\BSplineRotate.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Channels.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\ClassicRotate.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Colors.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\CopyPaste.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Display.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Flip.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\JPEGTransform.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\MultigridPoissonSolver.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Rescale.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Resize.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\CacheFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\DeprecationMgr.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FIRational.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageIO.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FreeImageTag.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Plugin.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PSDParser.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Quantizers.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\ToneMapping.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Utilities.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Resize.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Whatsnew.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LibJPEG.2010.vcxproj">
+      <Project>{5e1d4e5f-e10c-4ba3-b663-f33014fd21d9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="LibMNG.2010.vcxproj">
+      <Project>{912a2d43-35a3-4af2-b2eb-0d81effda6dc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="LibOpenJPEG.2010.vcxproj">
+      <Project>{e3536c28-a7f1-4b53-8e52-7d2232f9e098}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="LibPNG.2010.vcxproj">
+      <Project>{7db10b50-ce00-4d7a-b322-6824f05d2fcb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="LibRawLite.2010.vcxproj">
+      <Project>{07f662c1-1323-42ab-b6af-fbfd34a7437a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="LibTIFF.2010.vcxproj">
+      <Project>{431e3f3f-7c4d-430a-b8f1-4f165db64edc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="OpenEXR.2010.vcxproj">
+      <Project>{17a4874b-0606-4687-90b6-f91f8cb3b8af}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ZLib.FreeImage.2010.vcxproj">
+      <Project>{33134f61-c1ad-4b6f-9cea-503a9f140c52}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainLayerBlendMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialGeneratorA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialShaderHelperCg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialShaderHelperGLSL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialShaderHelperGLSLES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainMaterialShaderHelperHLSL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainQuadTreeNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainAutoUpdateLod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainLodManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainPaging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\src\OgreTerrainPagedWorldSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainLayerBlendMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainMaterialGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainMaterialGeneratorA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainQuadTreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainAutoUpdateLod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainLodManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainPaging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Terrain\include\OgreTerrainPagedWorldSection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0E1AEF8A-6078-4B2D-8E3E-D4239D305A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2EA4E6B2-0C73-4C84-BE34-6EF61BEC2077}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

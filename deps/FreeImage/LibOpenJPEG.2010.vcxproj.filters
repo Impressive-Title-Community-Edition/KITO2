@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\bio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\jpt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\cio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\dwt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\j2k.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\j2k_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\jp2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\mct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\openjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\mqc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\pi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\tgt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\tcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\t2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\t1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\cidx_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\phix_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\ppix_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\thix_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\tpix_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\bio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\cio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\dwt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\fix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\j2k.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\j2k_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\jp2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\jpt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\mct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\mqc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\openjpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\opj_malloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\pi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\t1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\t1_luts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\t2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\tcd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\tgt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\opj_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\cidx_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\indexbox_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\opj_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibOpenJPEG\license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d3ff12e8-896c-40a2-81e4-efdd6f95ed9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{efeb2518-cb66-4fcf-af27-c50a39b485fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

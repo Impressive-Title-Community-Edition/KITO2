@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>LibTIFF</ProjectName>
+    <ProjectGuid>{431E3F3F-7C4D-430A-B8F1-4F165DB64EDC}</ProjectGuid>
+    <RootNamespace>LibTIFF</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\libtiff;$(SolutionDir)../source-deps\zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\libtiff;$(SolutionDir)../source-deps\zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_aux.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_close.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_codec.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_color.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_compress.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dir.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirinfo.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirread.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dirwrite.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dumpmode.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_error.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_extension.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3sm.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_flush.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_getimage.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_jpeg.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_luv.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_lzw.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_next.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_ojpeg.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_open.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_packbits.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_pixarlog.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_predict.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_print.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_read.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_strip.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_swab.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_thunder.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_tile.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_version.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_warning.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_write.c" />
+    <ClCompile Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_zip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\t4.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_config.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_dir.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_fax3.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tif_predict.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiff.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffio.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffiop.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\tiffvers.h" />
+    <ClInclude Include="$(SolutionDir)../source-deps\FreeImage-3.15.4\Source\LibTIFF\uvcode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2e10fda2-6a20-44a6-9fde-d0d648cbe6d4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Plugins">
+      <UniqueIdentifier>{8727e3c8-e122-40be-b86b-b3553fc43168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Conversion">
+      <UniqueIdentifier>{f0464022-a7f6-4b57-9740-f84fec2685ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quantizers">
+      <UniqueIdentifier>{1b5f0741-8e14-4a89-9913-fe4462bfce58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeprecationMgr">
+      <UniqueIdentifier>{950a420b-aa91-423e-b10c-afc08a68bc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MultiPaging">
+      <UniqueIdentifier>{58398fb0-39eb-4116-af69-7c0ceb2def1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Metadata">
+      <UniqueIdentifier>{7cb1600c-bd2e-4f79-9f8d-aad0f9fe34f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{801a40fa-7b47-4a75-afdc-12653842d0a9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Toolkit Files">
+      <UniqueIdentifier>{448eefa9-96c7-458f-a382-0c1f2eddc5e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\BitmapAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ColorLookup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\FreeImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\FreeImageC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\FreeImageIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\GetType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MemoryIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PixelAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\J2KHelper.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MNGHelper.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Plugin.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginBMP.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginCUT.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginDDS.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginEXR.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginG3.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginGIF.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginHDR.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginICO.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginIFF.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJ2K.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJNG.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJP2.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginJPEG.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginKOALA.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginMNG.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPCD.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPCX.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPFM.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPICT.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPNG.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPNM.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginPSD.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginRAS.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginRAW.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginSGI.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginTARGA.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginTIFF.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginWBMP.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginXBM.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PluginXPM.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PSDParser.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\TIFFLogLuv.cpp">
+      <Filter>Source Files\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion16_555.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion16_565.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion24.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion32.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion4.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Conversion8.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionFloat.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionRGB16.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionRGBF.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionType.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ConversionUINT16.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\Halftoning.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoColorConvert.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoDrago03.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoFattal02.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\tmoReinhard05.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ToneMapping.cpp">
+      <Filter>Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\NNQuantizer.cpp">
+      <Filter>Source Files\Quantizers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\WuQuantizer.cpp">
+      <Filter>Source Files\Quantizers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\Deprecated.cpp">
+      <Filter>Source Files\DeprecationMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\DeprecationMgr.cpp">
+      <Filter>Source Files\DeprecationMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\CacheFile.cpp">
+      <Filter>Source Files\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\MultiPage.cpp">
+      <Filter>Source Files\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\ZLibInterface.cpp">
+      <Filter>Source Files\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\Exif.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FIRational.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FreeImageTag.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\IPTC.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\TagConversion.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\TagLib.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\XTIFF.cpp">
+      <Filter>Source Files\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Background.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\BSplineRotate.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Channels.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\ClassicRotate.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Colors.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\CopyPaste.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Display.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Flip.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\JPEGTransform.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\MultigridPoissonSolver.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Rescale.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Resize.cpp">
+      <Filter>Toolkit Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\FreeImage.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\CacheFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\DeprecationManager\DeprecationMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FIRational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Metadata\FreeImageTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImage\PSDParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Quantizers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\ToneMapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\FreeImageToolkit\Resize.h">
+      <Filter>Toolkit Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Todo.txt" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Whatsnew.txt" />
+  </ItemGroup>
+</Project>

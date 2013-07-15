@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Machine Independent">
+      <UniqueIdentifier>{a4e79079-6489-48e7-8e6a-9810f1f94c99}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;y;l</Extensions>
+    </Filter>
+    <Filter Include="Machine Independent\Generated Source">
+      <UniqueIdentifier>{1836ce02-5dd1-4daa-bd01-37b80d013cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine Independent\CPP">
+      <UniqueIdentifier>{74f56d0d-0d37-4dcd-8947-78a5a5f0c69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8e505afa-ca43-499d-b9d5-91cb69c5dbaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d3607532-8571-478c-aa4f-7d3ccb1b96ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLSL Code Gen">
+      <UniqueIdentifier>{85788c49-8554-4128-b288-54c9a15e2173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent">
+      <UniqueIdentifier>{d8aa1db9-6e58-435a-8803-c00e3066fa4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent\Windows">
+      <UniqueIdentifier>{0eaec527-4b7a-4c85-af35-a711ae84522d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent\Linux">
+      <UniqueIdentifier>{593fa08d-7939-4007-9d7e-2732fd1fe3e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\ConstantFolding.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\HLSL2GLSL.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\InfoSink.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\Initialize.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\Intermediate.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\intermOut.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\IntermTraverse.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\ParseHelper.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\PoolAlloc.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\RemoveTree.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\SymbolTable.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\Gen_hlslang.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\Gen_hlslang_tab.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\atom.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\cpp.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\cppstruct.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\memory.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\scanner.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\symbols.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\tokens.c">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslCommon.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslFunction.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslOutput.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslStruct.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslSymbol.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslCrossCompiler.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslLinker.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslSupportLib.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\propagateMutable.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\typeSamplers.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\OSDependent\Windows\ossource.cpp">
+      <Filter>OSDependent\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\OSDependent\Linux\ossource.cpp">
+      <Filter>OSDependent\Linux</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\Initialize.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\localintermediate.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\ParseHelper.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\RemoveTree.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\hlslang_tab.h">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\atom.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\compile.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\cpp.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\memory.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\parser.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\preprocess.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\scanner.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\slglobals.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\sourceloc.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\symbols.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\preprocessor\tokens.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\BaseTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\ConstantUnion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\InfoSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\InitializeGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\InitializeParseContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\intermediate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\PoolAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\SymbolTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\Include\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslCommon.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslFunction.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslOutput.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslStruct.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\glslSymbol.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslCrossCompiler.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslLinker.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\hlslSupportLib.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\propagateMutable.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\GLSLCodeGen\typeSamplers.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\OSDependent\Windows\osinclude.h">
+      <Filter>OSDependent\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\OSDependent\Linux\osinclude.h">
+      <Filter>OSDependent\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/include\hlsl2glsl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\hlslang.l">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+    <CustomBuild Include="$(SolutionDir)../source-deps/hlsl2glslfork-master/hlslang\MachineIndependent\hlslang.y">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

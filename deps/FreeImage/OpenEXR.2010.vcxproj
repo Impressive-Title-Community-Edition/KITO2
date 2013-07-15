@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>OpenEXR</ProjectName>
+    <ProjectGuid>{17A4874B-0606-4687-90B6-F91F8CB3B8AF}</ProjectGuid>
+    <RootNamespace>OpenEXR</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread;$(SolutionDir)..\source-deps\zlib-1.2.7;$(SolutionDir)zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half;$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread;$(SolutionDir)..\source-deps\zlib-1.2.7;$(SolutionDir)zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfB44Compressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfBoxAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelList.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelListAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticities.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticitiesAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressionAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfConvert.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCRgbaFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfDoubleAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmap.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmapAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFloatAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFrameBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFramesPerSecond.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHeader.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHuf.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInputFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIntAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIO.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCode.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCodeAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrderAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLut.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMatrixAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMisc.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOpaqueAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOutputFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPizCompressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImage.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImageAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPxr24Compressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRational.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRationalAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaYca.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRleCompressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfScanLineInputFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStandardAttributes.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStdIO.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTestFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfThreading.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescriptionAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledInputFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledMisc.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledOutputFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledRgbaFile.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileOffsets.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCode.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCodeAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVecAttribute.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVersion.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfWav.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfZipCompressor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBox.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColorAlgo.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFun.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrixAlgo.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRandom.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathShear.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVec.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexBaseExc.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexThrowErrnoExc.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\half.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThread.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadMutex.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadPool.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadSemaphore.cpp" />
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringVectorAttribute.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmBaseConfig.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\OpenEXRConfig.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\b44ExpLogTable.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfArray.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAutoArray.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfB44Compressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfBoxAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelList.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelListAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticities.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticitiesAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompression.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressionAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfConvert.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCRgbaFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfDoubleAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmap.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmapAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFloatAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFrameBuffer.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFramesPerSecond.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHeader.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHuf.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInputFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInt64.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIntAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIO.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCode.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCodeAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrder.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrderAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLut.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMatrixAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMisc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfName.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOpaqueAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOutputFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPixelType.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPizCompressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImage.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImageAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPxr24Compressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRational.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRationalAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgba.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaYca.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRleCompressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfScanLineInputFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStandardAttributes.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStdIO.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTestFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfThreading.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescription.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescriptionAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledInputFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledMisc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledOutputFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledRgbaFile.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileOffsets.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCode.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCodeAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVecAttribute.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVersion.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfWav.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfXdr.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfZipCompressor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBox.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBoxAlgo.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColor.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColorAlgo.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathEuler.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathExc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFrame.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFrustum.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFun.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathGL.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathGLU.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathHalfLimits.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathInterval.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLimits.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLine.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLineAlgo.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMath.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrix.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrixAlgo.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathPlane.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathPlatform.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathQuat.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRandom.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRoots.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathShear.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathSphere.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVec.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVecAlgo.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\Iex.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexBaseExc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexErrnoExc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexMacros.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexMathExc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexThrowErrnoExc.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\eLut.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\half.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\halfFunction.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\halfLimits.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\toFloat.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThread.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadMutex.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadPool.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadSemaphore.h" />
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCheckedArithmetic.h" />
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringVectorAttribute.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\AUTHORS" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\ChangeLog" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\COPYING" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\LICENSE" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\dcraw_common.cpp">
+      <Filter>Source Files\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\dcraw_fileio.cpp">
+      <Filter>Source Files\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\src\libraw_c_api.cpp">
+      <Filter>Source Files\libraw</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\src\libraw_cxx.cpp">
+      <Filter>Source Files\libraw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibRawLite\src\libraw_datastream.cpp">
+      <Filter>Source Files\libraw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\demosaic_packs.cpp">
+      <Filter>Source Files\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\defines.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_alloc.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_const.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_datastream.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_internal.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\libraw_internal_funcs.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_types.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\var_defines.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\libraw\libraw_version.h">
+      <Filter>Header Files\libraw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\LibRawLite\internal\libraw_bytebuffer.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\LibRawLite\COPYRIGHT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3689ad58-16b8-4725-8f26-68de942f713d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3d16c4cb-5007-46dd-aa34-765427b5078e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\internal">
+      <UniqueIdentifier>{7d181b12-6cdb-47d6-8b9a-5acaa558c8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libraw">
+      <UniqueIdentifier>{941fc181-5a27-462f-bd13-f4da392d6476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\internal">
+      <UniqueIdentifier>{dc81dbbf-3ebc-4b22-99d8-66c7d2f80544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libraw">
+      <UniqueIdentifier>{a1e0e654-fdd5-4793-8417-cd7e6ee80ada}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

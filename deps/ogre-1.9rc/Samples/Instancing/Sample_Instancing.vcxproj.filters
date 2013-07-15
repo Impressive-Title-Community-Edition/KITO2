@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\Instancing\src\Instancing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Samples\Instancing\include\Instancing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0E1AEF8A-6078-4B2D-8E3E-D4239D305A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2EA4E6B2-0C73-4C84-BE34-6EF61BEC2077}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

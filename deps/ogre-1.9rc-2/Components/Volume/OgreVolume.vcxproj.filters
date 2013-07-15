@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeCacheSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeCSGSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeDualGridGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeGridSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeHalfFloatGridSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeIsoSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeIsoSurfaceMC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeMeshBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeTextureSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeOctreeNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeOctreeNodeSplitPolicy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeSimplexNoise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\src\OgreVolumeSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeCacheSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeCSGSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeDualGridGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeGridSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeHalfFloatGridSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeIsoSurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeIsoSurfaceMC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeIsoSurfaceTablesMC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeMeshBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeTextureSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeChunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeOctreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeOctreeNodeSplitPolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeSimplexNoise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumeSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source-deps\ogre_src_v1-9-0RC1\Components\Volume\include\OgreVolumePrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0E1AEF8A-6078-4B2D-8E3E-D4239D305A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2EA4E6B2-0C73-4C84-BE34-6EF61BEC2077}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

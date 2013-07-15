@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>OIS</ProjectName>
+    <ProjectGuid>{9CC704CB-4956-4479-BDEC-57CBC03F700E}</ProjectGuid>
+    <RootNamespace>OIS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)dll\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)dll\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\ois-1.3\includes;$(SolutionDir)..\source-deps\ois-1.3\src;$(DXSDK_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OIS_NONCLIENT_BUILD;OIS_DYNAMIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;$(DXSDK_DIR)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(SolutionDir)lib/$(Configuration)/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source-deps\ois-1.3\includes;$(SolutionDir)..\source-deps\ois-1.3\src;$(DXSDK_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_STLP_DEBUG;OIS_NONCLIENT_BUILD;OIS_DYNAMIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;$(DXSDK_DIR)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(SolutionDir)lib/$(Configuration)/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISEffect.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISException.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISForceFeedback.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISInputManager.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISJoyStick.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISKeyboard.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\OISObject.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\Win32ForceFeedback.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\Win32InputManager.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\Win32JoyStick.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\Win32KeyBoard.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\Win32Mouse.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\hiddevice.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMote.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteFactoryCreator.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteForceFeedback.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteRingBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\wiimote.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\extras\LIRC\OISLIRC.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\ois-1.3\src\extras\LIRC\OISLIRCFactoryCreator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OIS.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISConfig.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISEvents.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISException.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISFactoryCreator.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISInputManager.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISJoystick.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISKeyboard.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISMouse.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISObject.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISPrereqs.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32ForceFeedback.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32InputManager.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32JoyStick.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32KeyBoard.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32Mouse.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\win32\Win32Prereqs.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISEffect.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISForceFeedback.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\includes\OISInterface.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\hiddevice.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMote.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteFactoryCreator.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteForceFeedback.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\OISWiiMoteRingBuffer.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\win32\extras\WiiMote\wiimote.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\extras\LIRC\OISLIRC.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\extras\LIRC\OISLIRCFactoryCreator.h" />
+    <ClInclude Include="$(SolutionDir)..\source-deps\ois-1.3\src\extras\LIRC\OISLIRCRingBuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\ois-1.3\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

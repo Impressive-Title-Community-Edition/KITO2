@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBox.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVec.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColorAlgo.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFun.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrixAlgo.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRandom.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathShear.cpp">
+      <Filter>Source Files\Imath Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThread.cpp">
+      <Filter>Source Files\IlmThread Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadSemaphore.cpp">
+      <Filter>Source Files\IlmThread Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadMutex.cpp">
+      <Filter>Source Files\IlmThread Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadPool.cpp">
+      <Filter>Source Files\IlmThread Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfZipCompressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfB44Compressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfBoxAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelList.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelListAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticities.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticitiesAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressionAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfConvert.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCRgbaFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfDoubleAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmap.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmapAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFloatAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFrameBuffer.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFramesPerSecond.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHeader.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHuf.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInputFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIntAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIO.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCode.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCodeAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrderAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLut.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMatrixAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMisc.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOpaqueAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOutputFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPizCompressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImage.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImageAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPxr24Compressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRational.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRationalAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaYca.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRleCompressor.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfScanLineInputFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStandardAttributes.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStdIO.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTestFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfThreading.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescriptionAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledInputFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledMisc.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledOutputFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledRgbaFile.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileOffsets.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCode.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCodeAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVecAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVersion.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfWav.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexBaseExc.cpp">
+      <Filter>Source Files\Iex Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexThrowErrnoExc.cpp">
+      <Filter>Source Files\Iex Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\half.cpp">
+      <Filter>Source Files\Half Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringVectorAttribute.cpp">
+      <Filter>Source Files\IlmImf Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmBaseConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\b44ExpLogTable.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\eLut.h">
+      <Filter>Header Files\Half Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\half.h">
+      <Filter>Header Files\Half Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\halfFunction.h">
+      <Filter>Header Files\Half Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\halfLimits.h">
+      <Filter>Header Files\Half Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\Iex.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexBaseExc.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexErrnoExc.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexMacros.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexMathExc.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Iex\IexThrowErrnoExc.h">
+      <Filter>Header Files\Iex Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Half\toFloat.h">
+      <Filter>Header Files\Half Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThread.h">
+      <Filter>Header Files\IlmThread Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadSemaphore.h">
+      <Filter>Header Files\IlmThread Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadMutex.h">
+      <Filter>Header Files\IlmThread Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmThread\IlmThreadPool.h">
+      <Filter>Header Files\IlmThread Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBox.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColor.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathColorAlgo.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathEuler.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathExc.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFrame.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFrustum.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathFun.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathGL.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathGLU.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathHalfLimits.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathInterval.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLimits.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLine.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathLineAlgo.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMath.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrix.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathMatrixAlgo.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathPlane.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathPlatform.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathQuat.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRandom.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathRoots.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathShear.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathSphere.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVec.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathVecAlgo.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Imath\ImathBoxAlgo.h">
+      <Filter>Header Files\Imath Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfArray.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfAutoArray.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfB44Compressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfBoxAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelList.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChannelListAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticities.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfChromaticitiesAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompression.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressionAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCompressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfConvert.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCRgbaFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfDoubleAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmap.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfEnvmapAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFloatAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFrameBuffer.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfFramesPerSecond.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHeader.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfHuf.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInputFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfInt64.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIntAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfIO.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCode.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfKeyCodeAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrder.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLineOrderAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfLut.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMatrixAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfMisc.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfName.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOpaqueAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfOutputFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPixelType.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPizCompressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImage.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPreviewImageAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfPxr24Compressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRational.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRationalAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgba.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRgbaYca.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfRleCompressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfScanLineInputFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStandardAttributes.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStdIO.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTestFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfThreading.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescription.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileDescriptionAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledInputFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledMisc.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledOutputFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTiledRgbaFile.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTileOffsets.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCode.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfTimeCodeAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVecAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfVersion.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfWav.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfXdr.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfZipCompressor.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfStringVectorAttribute.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source-deps\FreeImage-3.15.4\Source\OpenEXR\IlmImf\ImfCheckedArithmetic.h">
+      <Filter>Header Files\IlmImf Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\OpenEXRConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\AUTHORS" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\ChangeLog" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\COPYING" />
+    <None Include="$(SolutionDir)..\source-deps\FreeImage-3.15.4\Source\OpenEXR\Copyrights\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{093edb8b-b52f-4b39-ba19-476113dd746c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e9b3f0ab-9640-4cb4-a15f-002bf2f7d461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Half Header Files">
+      <UniqueIdentifier>{c7388100-6e5d-43eb-9738-5072ba4b222f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Iex Header Files">
+      <UniqueIdentifier>{9d5517f1-91bf-44cf-9ce6-601597ff3680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IlmImf Header Files">
+      <UniqueIdentifier>{f3066594-7a0e-4b81-b6bd-1b4b2b9fbfff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Imath Header Files">
+      <UniqueIdentifier>{d225e96e-e2ec-443f-b1cc-0a10b322b64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Half Source Files">
+      <UniqueIdentifier>{0368d49a-71cc-4314-a337-ee659a38be7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Iex Source Files">
+      <UniqueIdentifier>{4d8d49c8-fdbf-49b8-90dc-72b40acbedf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IlmImf Source Files">
+      <UniqueIdentifier>{72b52b27-18ec-4865-b45d-e2f41dff5d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IlmThread Source Files">
+      <UniqueIdentifier>{6699cc53-6b40-4558-b0f5-e04c380c005a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Imath Source Files">
+      <UniqueIdentifier>{e543bd2a-d73e-45ae-8598-b5366ed62d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IlmThread Header Files">
+      <UniqueIdentifier>{130d27c4-d94e-49f7-8e38-d13745521b91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

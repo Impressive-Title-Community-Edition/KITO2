@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{75F97A44-176E-4023-B5D3-E62775127232}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>glsl_optimizer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source-deps/glsl-optimizer-master/include;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mesa;$(SolutionDir)../source-deps/glsl-optimizer-master/src/mapi;$(SolutionDir)../source-deps/glsl-optimizer-master/src/glsl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ast_array_index.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ast_expr.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ast_function.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ast_to_hir.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ast_type.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\builtin_function.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\builtin_variables.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_lexer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_optimizer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_parser.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_parser_extras.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_symbol_table.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\glsl_types.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\hir_field_selection.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_basic_block.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_builder.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_clone.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_constant_expression.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_expression_flattening.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_function.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_function_can_inline.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_function_detect_recursion.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_hierarchical_visitor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_hv_accept.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_import_prototypes.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_print_glsl_visitor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_print_visitor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_reader.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_rvalue_visitor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_unused_structs.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_validate.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ir_variable_refcount.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\linker.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_functions.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_uniforms.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_uniform_blocks.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_uniform_block_active_visitor.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_uniform_initializers.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\link_varyings.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\loop_analysis.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\loop_controls.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\loop_unroll.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_clip_distance.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_discard.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_discard_flow.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_if_to_cond_assign.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_instructions.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_jumps.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_mat_op_to_vec.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_noise.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_output_reads.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_packed_varyings.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_packing_builtins.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_ubo_reference.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_variable_index_to_cond_assign.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_vector.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_vec_index_to_cond_assign.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\lower_vec_index_to_swizzle.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_algebraic.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_array_splitting.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_constant_folding.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_constant_propagation.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_constant_variable.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_copy_propagation.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_copy_propagation_elements.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_dead_code.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_dead_code_local.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_dead_functions.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_flatten_nested_if_blocks.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_function_inlining.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_if_simplification.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_noop_swizzle.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_redundant_jumps.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_structure_splitting.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_swizzle_swizzle.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\opt_tree_grafting.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\standalone_scaffolding.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\s_expression.cpp" />
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\ralloc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\source-deps\glsl-optimizer-master\src\glsl\strtod.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)glsl/mesa.vcxproj">
+      <Project>16AC38CB-10FB-482B-8F2F-A9E3F4DB0E19</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
